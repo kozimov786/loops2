@@ -1,0 +1,106 @@
+html{
+    box-sizing: border-box;
+}
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(190, 190, 83);
+    font-family: 'Roboto';
+}
+.container{
+    width: 840px;
+    max-height: 550px;
+    background-color: #fff;
+    margin: 150px auto;
+    display: flex;
+}
+.wallet{
+    width: 220px;
+    max-height: 500px;
+    padding:20px 40px;
+    margin-bottom: 0;
+    overflow:auto;
+    background-color: rgb(228, 227, 227);
+}
+.card{
+    width: 140px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 20px 20px;
+    overflow: auto;
+}
+.card p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+.my{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-visa{
+    padding:15px 20px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.card-mastercard{
+    padding:15px 20px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.card-maestra{
+    padding:15px 20px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    text-align: left;
+    padding-right: 20px;
+    color: #888;
+    font-size: 16px;
+    font-weight: 500;
+}
+.list h3{
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+}
+.current{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+.balance{
+    max-height: 540px;
+    width: 550px;
+    overflow: auto;
+}
+.circle{
+    border: 1px solid #888;
+    border-radius: 50%;
+}
+.price{
+    font-size: 24px;
+    font-weight: 900;
+    color: black;
+}
+.price-list{
+    color: rgb(165, 165, 253);
+    font-size: 22px;
+    font-weight: 700;
+}
+.price-none{
+    color: rgb(61, 114, 110);
+    font-size: 22px;
+    font-weight: 700;
+}
