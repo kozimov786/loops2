@@ -26,6 +26,18 @@ body{
     overflow:auto;
     background-color: rgb(228, 227, 227);
 }
+.plus{
+    background-image: url(img/plus.svg);
+    width:25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: rgb(228, 227, 227);
+    padding: 0;
+    margin: 0;
+    display: block;
+
+}
 .card{
     width: 140px;
     border: 1px solid #555;
@@ -86,6 +98,10 @@ body{
     overflow: auto;
 }
 .circle{
+    background-image: url(img/minus.svg);
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
     border: 1px solid #888;
     border-radius: 50%;
 }
