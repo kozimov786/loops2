@@ -13,17 +13,16 @@ body{
 }
 .container{
     width: 840px;
-    max-height: 550px;
+    max-height: 520px;
     background-color: #fff;
     margin: 150px auto;
     display: flex;
 }
 .wallet{
-    width: 220px;
-    max-height: 500px;
+    width: 252px;
     padding:20px 40px;
     margin-bottom: 0;
-    overflow:auto;
+    overflow-y:scroll;
     background-color: rgb(228, 227, 227);
 }
 .plus{
@@ -32,43 +31,50 @@ body{
     height: 25px;
     background-repeat: no-repeat;
     border: none;
-    background-color: rgb(228, 227, 227);
+    background-color: #e4e3e3;
     padding: 0;
     margin: 0;
-    display: block;
-
+    cursor: pointer;
+    outline: none;
 }
 .card{
-    width: 140px;
+    width: 180px;
     border: 1px solid #555;
     border-radius: 5px;
     padding: 20px 20px;
     overflow: auto;
 }
-.card p{
-    margin: 0;
+.wallet p{
+    margin-top: 5px;
+    margin-bottom: 0;
     font-size: 16px;
     font-weight: 400;
 }
-.my{
+.wallet-title{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.card-visa{
+.list h3{
+    margin-bottom: 5px;
+}
+.list p{
+    margin: 0;
+}
+.card{
     padding:15px 20px;
     margin-bottom: 30px;
     margin-top: 50px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.card:hover{
+    border: 1px solid #6a6ad6;
+    box-shadow: 0 1px 8px 1px;
 }
 .card-mastercard{
-    padding:15px 20px;
-    margin-bottom: 30px;
-    margin-top: 50px;
-}
-.card-maestra{
-    padding:15px 20px;
-    margin-bottom: 30px;
-    margin-top: 50px;
+    border: 1px solid #6a6ad6;
+    box-shadow: 0 1px 8px 1px;
 }
 .list{
     display: flex;
@@ -88,22 +94,34 @@ body{
 }
 .current{
     display: flex;
-    justify-content: space-around;
+    padding:5px 25px;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
 }
 .balance{
-    max-height: 540px;
     width: 550px;
-    overflow: auto;
+    overflow-y:scroll;
+    padding-right: 32px;
+}
+hr{
+    width: 80%;
+    color: #eee;
 }
 .circle{
     background-image: url(img/minus.svg);
     width: 25px;
     height: 25px;
     background-repeat: no-repeat;
+    background-color: #fff;
     border: 1px solid #888;
     border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+.circle:hover{
+    box-shadow: 0 1px 3px 2px #d7d7d8;
+    background-color: #fff;
 }
 .price{
     font-size: 24px;
@@ -111,12 +129,25 @@ body{
     color: black;
 }
 .price-list{
-    color: rgb(165, 165, 253);
+    color: #a5a5fd;
     font-size: 22px;
     font-weight: 700;
 }
 .price-none{
-    color: rgb(61, 114, 110);
+    color: #3d726e;
     font-size: 22px;
     font-weight: 700;
+}
+.price-list-change{
+    color: #64a3a3;
+}
+.list .circle-plus{
+    background-image: url(img/plus.svg);
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    border: 1px solid #888;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
 }
